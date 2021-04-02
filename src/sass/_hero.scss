@@ -1,0 +1,73 @@
+.heroy__title {
+  /* font-family: Montserrat; */
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.03em;
+
+  color: #111518;
+
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.heroy__text {
+  /* font-family: Montserrat; */
+  /* font-style: normal; */
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+  margin-bottom: 30px;
+}
+.heroy__text-rgey {
+  color: #b9b9b9;
+  font-weight: 500;
+}
+.heroy__text-dark {
+  font-weight: 700;
+  color: #111518;
+}
+.heroy__text-accent {
+  font-weight: 700;
+  color: #ff6b09;
+}
+
+.heroy__button {
+  background: #ff6b09;
+  border: none;
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  height: 48px;
+  margin-bottom: 30px;
+}
+
+.heroy__button-text {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+
+  /* align-items: center; */
+  /* text-align: center; */
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.heroy__img {
+  margin: 0 auto;
+  max-width: 208px;
+  height: 177.5px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./img/Ellipse2.png), url(./img/Ellipse1.png);
+}
