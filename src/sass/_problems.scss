@@ -1,0 +1,9 @@
+.problems__list {
+    counter-reset: section; 
+    list-style-type: none;
+}
+.problems__text::before {
+    counter-increment: section;
+    content: '— ' counter(section, decimal-leading-zero) ' ';
+  
+}
