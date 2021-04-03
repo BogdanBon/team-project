@@ -34,7 +34,33 @@
     height: 60px;
 
     margin-right: 10px;
+    background-image: url(../images/svg/group-2.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__item--first::before {
+    content: ' ';
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+
+    margin-right: 10px;
     background-image: url(../images/svg/group-1.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__item--last::before {
+    content: ' ';
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+
+    margin-right: 10px;
+    background-image: url(../images/svg/group-3.svg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
