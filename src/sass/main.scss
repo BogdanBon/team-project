@@ -4,6 +4,9 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+@import 'base/basic-styles';
+@import 'base/visually-hidden';
+@import './variables';
 @import './header';
 @import './hero';
 @import './advantages';
@@ -17,5 +20,3 @@
 @import './contacts';
 @import './footer';
 @import './mobile-menu';
-@import 'base/basic-styles';
-@import 'base/visually-hidden'
