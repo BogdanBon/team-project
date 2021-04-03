@@ -1,0 +1,77 @@
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.hero__title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.03em;
+
+  color: #111518;
+
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.hero__text {
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+  margin-bottom: 30px;
+}
+.hero__text-rgey {
+  color: #b9b9b9;
+  font-weight: 500;
+}
+.hero__text-dark {
+  font-weight: 700;
+  color: #111518;
+}
+.hero__text-accent {
+  font-weight: 700;
+  color: #ff6b09;
+}
+
+.hero__button {
+  background: #ff6b09;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  height: 48px;
+  margin-bottom: 30px;
+}
+
+.hero__button-text {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.hero__img {
+  margin: 0 auto;
+  max-width: 208px;
+  height: 177.5px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/hero/hero-mob/hero-mob-Ellipse2.png'),
+    url('../images/hero/hero-mob/hero-mob-Ellipse1.png');
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/hero/hero-mob/hero-mob-Ellipse2@2x.png'),
+      url('../images/hero/hero-mob/hero-mob-Ellipse1@2x.png');
+  }
+}
