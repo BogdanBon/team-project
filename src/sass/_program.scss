@@ -53,6 +53,9 @@ body {
     line-height: 2;
   }
 
+  &__item {
+    border-left: $white 1px solid;
+  }
   &::before {
     counter-increment: section;
     content: counters(section, '. ');
