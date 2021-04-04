@@ -23,7 +23,7 @@
 
 .slide-container {
   width: 280px;
-  max-height: 564px;
+  height: 564px;
   padding: 20px 20px 30px 20px;
   background: #ffffff;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
@@ -66,7 +66,7 @@
 
 .description-comment {
   width: 240px;
-  height: 257px;
+  max-height: 257px;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -81,9 +81,14 @@
 
 .controls-container {
   display: flex;
+  width: 260px;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+}
+
+.mySlides {
+  display: none;
 }
 
 .dot {
