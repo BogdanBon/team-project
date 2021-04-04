@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section-reviews__container {
+  width: 280px;
+  padding: 50px 20px;
+}
+
+.title {
+  width: 280px;
+  font-family: 'Monserrat', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #111518;
+  margin-bottom: 20px;
+}
+
+.slide-container {
+  width: 280px;
+  height: 564px;
+  padding: 20px 20px 30px 20px;
+  background: #ffffff;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+.section-reviews__image {
+  margin: 0 75px;
+}
+
+.section-reviews__icon {
+  margin: 26.51px 105px;
+}
+
+.description-title {
+  width: 225px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #ff6b09;
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+
+.description-info {
+  width: 240px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #b9b9b9;
+  margin-bottom: 10px;
+}
+
+.description-comment {
+  width: 240px;
+  max-height: 257px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.description-comment a {
+  color: rgba(255, 107, 9, 1);
+}
+
+.controls-container {
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.dot {
+  cursor: pointer;
+  width: 54px;
+  height: 54px;
+}
+
+.active,
+.dot:hover {
+  border: solid 2px #ff6b09;
+  border-radius: 50%;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.img-tablet {
+  display: none;
+}
