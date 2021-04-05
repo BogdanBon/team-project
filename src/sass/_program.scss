@@ -17,14 +17,14 @@ body {
 
   background-color: $black;
   color: $white;
-  // background-image: url(../images/program.img/program.m1.png);
+  background-image: url(../images/program.img/program.m1.png);
   background-repeat: no-repeat;
   background-position: right 1332px;
 
   @media screen and (min-width: 768px) {
     padding-top: 60px 0px 253px 0px;
     max-width: 1199px;
-    // background-image: url(../images/program.img/program.t1.png);
+    background-image: url(../images/program.img/program.t1.png);
     background-repeat: no-repeat;
     background-position: right 815px;
   }
