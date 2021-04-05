@@ -82,7 +82,7 @@ color: #fff;
       right: 20px;
       left: 20px;
       margin-top: 27px;
-      height: 480px;
+      height: 490px;
       padding: 30px 20px;
   }
   @media (min-width: 768px) {
@@ -129,6 +129,11 @@ color: #fff;
    
        display: flex;
        color: rgba(255, 107, 9, 1);
+  }
+}
+@media screen and (max-width: 767px) {
+  .problems__text:nth-last-child(-n + 5) {
+  height: 69px;
   }
 }
   @media screen and (min-width: 768px) {
