@@ -1,7 +1,3 @@
-body {
-  font-family: Montserrat, sans-serif;
-}
-
 .section-program {
   font-family: inherit;
 
@@ -21,12 +17,20 @@ body {
   background-repeat: no-repeat;
   background-position: right 1332px;
 
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/program.img/program.m2.png);
+  }
+
   @media screen and (min-width: 768px) {
-    padding-top: 60px 0px 253px 0px;
+    padding: 60px 0px 253px 0px;
     max-width: 1199px;
     background-image: url(../images/program.img/program.t1.png);
     background-repeat: no-repeat;
-    background-position: right 815px;
+    background-position: right 767px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/program.img/program.t2.png);
+    }
   }
 
   &__title {
