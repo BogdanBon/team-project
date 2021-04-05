@@ -1,4 +1,5 @@
 .hero {
+  margin: 0 auto;
   // max-width: 768px;
   max-width: 768px;
   height: 618px;
@@ -31,7 +32,20 @@
 }
 
 .hero__container {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (max-width: 767px) {
+    padding-right: 18px;
+    padding-left: 42px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
+
 .hero__flex-box {
   // margin-bottom: 30px;
   // padding-bottom: 17px;
