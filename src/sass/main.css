@@ -812,6 +812,7 @@ body {
           align-items: center;
   background-color: #111518;
   color: white;
+  background-image: url(../images/program.img/program.m1.png);
   background-repeat: no-repeat;
   background-position: right 1332px;
 }
@@ -820,6 +821,7 @@ body {
   .section-program {
     padding-top: 60px 0px 253px 0px;
     max-width: 1199px;
+    background-image: url(../images/program.img/program.t1.png);
     background-repeat: no-repeat;
     background-position: right 815px;
   }
