@@ -1,17 +1,53 @@
+.hero {
+  // max-width: 768px;
+  max-width: 768px;
+  height: 618px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+
+  background-image: url('../images/hero/hero-des/Vector-des.png');
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/hero/hero-des/Vector-des@2x.png');
+  }
+
+  @media (min-width: 768px) {
+    background-size: contain;
+    min-width: 768px;
+    height: 556px;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1688px;
+    height: 878px;
+    // height: 782px;
+    // background-image: url('../images/hero/hero-des/Vector-des.png');
+  }
+}
+
 .container {
-  padding-right: 20px;
-  padding-left: 20px;
 }
 .hero__flex-box {
+  // margin-bottom: 30px;
+  // padding-bottom: 17px;
+
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
     // justify-content: space-between;
-    margin-top: 70px;
-    margin-bottom: 114px;
+    // margin-top: 70px;
+    // padding-top: 70px;
+    // margin-bottom: 114px;
+    // padding-bottom: 72px;
   }
   @media (min-width: 1280px) {
-    margin-top: 45px;
+    // padding-bottom: 10px;
+    // margin-top: 45px;
   }
 }
 
@@ -23,7 +59,7 @@
 
   color: #111518;
 
-  // margin-top: 50px;
+  // padding-top: 50px;
   margin-bottom: 30px;
 
   @media (min-width: 768px) {
@@ -34,6 +70,8 @@
   @media (min-width: 1280px) {
     font-size: 58px;
     line-height: 1.3;
+    margin-bottom: 24px;
+    max-width: 642px;
   }
 }
 
@@ -42,8 +80,10 @@
   line-height: 1.6;
   letter-spacing: 0.08em;
   margin-bottom: 30px;
+
   @media (min-width: 1280px) {
     font-size: 20px;
+    margin-bottom: 40px;
   }
 }
 .hero__text-rgey {
@@ -138,6 +178,8 @@
     background-image: url('../images/hero/hero-des/hero-des-Ellipse2.png'),
       url('../images/hero/hero-des/hero-des-Ellipse1.png');
     min-width: 841px;
+    // width: 841px;
+    // min-height: 718px;
     height: 718px;
 
     @media (min-device-pixel-ratio: 2),
