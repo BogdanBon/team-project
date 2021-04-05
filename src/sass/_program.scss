@@ -1,10 +1,10 @@
-// body {
-//   font-family: Montserrat, sans-serif;
-// }
+
+body {
+  font-family: Montserrat, sans-serif;
+}
 
 .section-program {
   font-family: inherit;
-  box-sizing: inherit;
 
   margin: 0;
   padding: 50px 0px 440px 0px;
@@ -18,14 +18,15 @@
 
   background-color: $black;
   color: $white;
-  background-image: url(/images/program.m1.png);
+  background-image: url(../images/program.m1.jpg);
+
   background-repeat: no-repeat;
   background-position: right 1332px;
 
   @media screen and (min-width: 768px) {
     padding-top: 60px 0px 253px 0px;
     max-width: 1199px;
-    background-image: url(/images/program.t1.png);
+    background-image: url(../images/program.t1.png);
     background-repeat: no-repeat;
     background-position: right 815px;
   }
