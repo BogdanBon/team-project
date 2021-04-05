@@ -6,6 +6,18 @@
   padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: 768px) {
+    padding-left: 79px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-top: 50px;
+    padding-bottom: 45px;
+    padding-left: 112px;
+    padding-right: 112px;
+  }
 }
 .guarantee__title {
   font-weight: 800;
