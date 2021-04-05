@@ -1,4 +1,4 @@
-.container- {
+.container-how-we-do {
   max-width: 320px;
   padding: 0 20px 0 20px;
   margin-left: auto;
@@ -26,8 +26,8 @@
   &:focus {
     background-color: rgb(255, 107, 9);
   }
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .we-do-list__item:focus,
@@ -37,7 +37,6 @@
   .we-do-list__text,
   .we-do-list__icon {
     color: rgb(255, 255, 255);
-    fill: rgb(255, 255, 255);
   }
   .we-do-list__title::after {
     background-color: rgb(255, 255, 255);
@@ -69,4 +68,8 @@
   line-height: 1.67;
   letter-spacing: 0.08em;
   color: rgb(185, 185, 185);
+}
+
+.we-do-list__icon {
+  color: rgb(255, 107, 9);
 }

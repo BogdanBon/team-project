@@ -1,15 +1,21 @@
+.container-contacts {
+  max-width: 320px;
+  padding: 0 20px 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .contacts {
   padding: 50px 0px 50px 0px;
   background-color: rgba(17, 21, 24, 1);
 
-  background-image: linear-gradient(to right, rgba(17, 21, 24, 0.5), rgba(17, 21, 24, 0.5)),
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('../images/contacts/contacts-bg-mob.jpg');
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: linear-gradient(to right, rgba(17, 21, 24, 0.5), rgba(17, 21, 24, 0.5)),
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url('../images/contacts/contacts-bg-mob@2x.jpg');
   }
 
@@ -27,7 +33,6 @@
 }
 
 .contacts__text {
-  padding: 0 15px 0 15px;
   margin-top: 30px;
   font-size: 12px;
   font-weight: 600;
