@@ -1,0 +1,154 @@
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.section-program {
+  font-family: inherit;
+
+  margin: 0;
+  padding: 50px 0px 56px 0px;
+
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  background-color: $black;
+  color: $white;
+
+  &__title {
+    margin: 0px 0px 43px;
+
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+  }
+}
+
+.program-container {
+  display: flex;
+  position: relative;
+}
+
+.program-border {
+  border-left: 1px solid $white;
+  height: 1130px;
+  position: fixed;
+  top: 154px;
+}
+
+.program-list {
+  @media screen and (min-width: 300px) {
+    max-width: 480px;
+    margin: 0px 0px 0px 26px;
+    padding: 0;
+
+    list-style-type: none;
+    text-align: left;
+  }
+}
+
+.program-list__title {
+  position: relative;
+  text-transform: uppercase;
+  font-family: inherit;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: -33px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $accent;
+  }
+
+  @media screen and (min-width: 300px) {
+    max-width: 480px;
+    margin: 0px 0px 5px;
+
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  &__item {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.semester-list {
+  @media screen and (min-width: 300px) {
+    max-width: 480px;
+    padding: 0;
+
+    list-style-type: none;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    margin: 5px 0px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.66;
+    letter-spacing: 0.08em;
+    color: $accent;
+
+    &::before {
+      content: '—';
+      display: inline-block;
+      width: 20px;
+      height: 2px;
+      color: currentColor;
+    }
+  }
+
+  &__subtitle {
+    margin: 8px 0px 5px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.66;
+    letter-spacing: 0.08em;
+    color: $accent;
+
+    &::before {
+      content: '—';
+      display: inline-block;
+      width: 20px;
+      height: 2px;
+      color: currentColor;
+    }
+  }
+}
+
+.list__curriculum {
+  padding: 0;
+  list-style-type: none;
+  display: inline-block;
+
+  &__item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.66;
+    color: $light-grey;
+  }
+}
+
+.section-program__img {
+  @media screen and (min-width: 300px) {
+    opacity: 50%;
+    position: absolute;
+    right: -100px;
+    bottom: -127px;
+    width: 176px;
+    display: block;
+  }
+}
