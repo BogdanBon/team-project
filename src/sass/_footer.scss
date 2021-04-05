@@ -10,6 +10,12 @@
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 85px;
+
   font-size: 15px;
   font-weight: 700;
   line-height: 1.219;
@@ -19,12 +25,11 @@
 
 .logo__text--small {
   margin-top: 4px;
-  font-size: 6px;
+  font-size: 5px;
   font-weight: 700;
   letter-spacing: 0.18em;
-  line-height: 1.22;
+  line-height: 1.2;
   text-transform: uppercase;
-  display: block;
 }
 
 .logo__text--orange {
@@ -35,8 +40,8 @@
   content: ' ';
   display: inline-block;
 
-  width: 22px;
-  height: 30px;
+  width: 15px;
+  height: 20px;
 
   margin-left: 4px;
   margin-right: 4px;
