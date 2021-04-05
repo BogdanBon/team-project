@@ -2,11 +2,21 @@
 }
 
 .container-footer {
-  padding: 30px 60px 30px 60px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    max-width: 320px;
+    padding: 30px 60px 30px 60px;
+    flex-direction: column;
+  }
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    max-width: 688px;
+    padding: 40px 0 40px;
+  }
 }
 
 .logo {
@@ -21,6 +31,13 @@
   line-height: 1.219;
   letter-spacing: 0.04em;
   color: rgb(17, 21, 24);
+
+  @media screen and (min-width: 768px) {
+    max-width: 130px;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.23;
+  }
 }
 
 .logo__text--small {
@@ -30,6 +47,11 @@
   letter-spacing: 0.18em;
   line-height: 1.2;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 8px;
+    line-height: 1.25;
+  }
 }
 
 .logo__text--orange {
@@ -50,26 +72,73 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media screen and (min-width: 768px) {
+    width: 22px;
+    height: 30px;
+  }
 }
 
 .tel-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 21px;
+  @media screen and (max-width: 767px) {
+    margin-top: 21px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
 }
 
 .tel-container__link {
+  display: block;
   margin-left: 10px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.21px;
   letter-spacing: 0.08em;
   color: $black;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.tel-container__icon {
+  @media screen and (max-width: 767px) {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 23px;
+  }
 }
 
 .instagram-icon {
-  margin-top: 31px;
+  @media screen and (max-width: 767px) {
+    margin-top: 31px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 24px;
+  }
+}
+
+.border-footer {
+  border-left: 1px solid $light-grey;
+  height: 40px;
+  display: block;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 24px;
+  }
 }
 
 .copyright__text {
