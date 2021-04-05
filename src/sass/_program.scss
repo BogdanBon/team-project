@@ -1,12 +1,13 @@
-body {
-  font-family: Montserrat, sans-serif;
-}
+// body {
+//   font-family: Montserrat, sans-serif;
+// }
 
 .section-program {
   font-family: inherit;
+  box-sizing: inherit;
 
   margin: 0;
-  padding: 50px 0px 56px 0px;
+  padding: 50px 0px 440px 0px;
 
   text-align: center;
   flex-direction: column;
@@ -17,6 +18,17 @@ body {
 
   background-color: $black;
   color: $white;
+  background-image: url(/images/program.m1.png);
+  background-repeat: no-repeat;
+  background-position: right 1332px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px 0px 253px 0px;
+    max-width: 1199px;
+    background-image: url(/images/program.t1.png);
+    background-repeat: no-repeat;
+    background-position: right 815px;
+  }
 
   &__title {
     margin: 0px 0px 43px;
@@ -25,6 +37,10 @@ body {
     font-size: 20px;
     line-height: 1.3;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 768px) {
+      margin: 0px auto 40px 52px;
+    }
   }
 }
 
@@ -34,20 +50,38 @@ body {
 }
 
 .program-border {
-  border-left: 1px solid $white;
-  height: 1130px;
-  position: fixed;
-  top: 154px;
+  @media screen and (min-width: 300px) {
+    border-left: 1px solid $white;
+    height: 1146px;
+    position: absolute;
+    top: 15px;
+    max-width: 480px;
+    left: -1px;
+  }
+
+  @media screen and (min-width: 768px) {
+    border-left: 1px solid $white;
+    height: 681px;
+    position: absolute;
+    top: 14px;
+    max-width: 1199px;
+    left: 1px;
+  }
 }
 
 .program-list {
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+
   @media screen and (min-width: 300px) {
     max-width: 480px;
     margin: 0px 0px 0px 26px;
-    padding: 0;
+  }
 
-    list-style-type: none;
-    text-align: left;
+  @media screen and (min-width: 768px) {
+    max-width: 1199px;
+    margin: 0px 0px 0px 50px;
   }
 }
 
@@ -67,6 +101,12 @@ body {
     height: 12px;
     border-radius: 50%;
     background-color: $accent;
+
+    @media screen and (min-width: 768px) {
+      max-width: 1199px;
+      bottom: 8px;
+      left: -55px;
+    }
   }
 
   @media screen and (min-width: 300px) {
@@ -90,6 +130,12 @@ body {
 
     list-style-type: none;
     margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 1199px;
+    display: flex;
+    margin-bottom: 30px;
   }
 
   &__title {
@@ -129,7 +175,7 @@ body {
   }
 }
 
-.list__curriculum {
+.list-curriculum {
   padding: 0;
   list-style-type: none;
   display: inline-block;
@@ -142,13 +188,44 @@ body {
   }
 }
 
-.section-program__img {
-  @media screen and (min-width: 300px) {
-    opacity: 50%;
-    position: absolute;
-    right: -100px;
-    bottom: -127px;
-    width: 176px;
-    display: block;
+.semester-list__one:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-right: 84px;
+    max-width: 1199px;
+  }
+}
+
+.semester-list__two:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-right: 119px;
+    max-width: 1199px;
+  }
+}
+
+.semester-list__three:first-child {
+  @media screen and (min-width: 768px) {
+    margin-right: 119px;
+    max-width: 1199px;
+  }
+}
+
+.semester-list__three:last-child {
+  @media screen and (min-width: 768px) {
+    margin-left: 64px;
+    max-width: 1199px;
+  }
+}
+
+.semester-list__four:first-child {
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+    max-width: 1199px;
+  }
+}
+
+.semester-list__four:last-child {
+  @media screen and (min-width: 768px) {
+    margin-left: 50px;
+    max-width: 1199px;
   }
 }
