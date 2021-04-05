@@ -1,0 +1,80 @@
+.about {
+    padding-bottom: 50px;
+}
+
+.about__container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about__title {
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: $black;
+}
+
+.about__second-title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  margin-top: 20px;
+
+  color: $black;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $light-grey;
+}
+
+.about__thumb {
+    padding-bottom: 14px;
+    border-bottom: 1px solid $accent;
+}
+
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  height: 193px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  color: $black;
+}
+
+.about__item::before {
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 14px;
+    margin-right: 9px;
+    background-image: url(../images/svg/tick.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.about__second-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 279px;
+  height: 348px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 14px;
+  justify-content: space-between;
+  color: $light-grey;
+}
+
+.about__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 15px;
+  text-decoration-line: underline;
+  color: $accent;
+}
