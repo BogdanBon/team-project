@@ -11,7 +11,7 @@
                     </use>
                 </svg>
             </a>
-            <article>
+            <article class="description-article">
                 <h3 class="description-title">Екатерина Соловей</h3>
                 <p class="description-info">
                     Северо-Западный институт управления РАНХиГС
@@ -37,7 +37,7 @@
                     </use>
                 </svg>
             </a>
-            <article>
+            <article class="description-article">
                 <h3 class="description-title">Елена Маковец</h3>
                 <p class="description-info">
                     Национальный технический университет «Харьковский политехнический институт»
@@ -64,7 +64,7 @@
                     </use>
                 </svg>
             </a>
-            <article>
+            <article class="description-article">
                 <h3 class="description-title">Ольга Прокофьева</h3>
                 <p class="description-info">
                     Национальный исследовательский университет «Высшая школа экономики» в Нижнем Новгороде
@@ -90,7 +90,7 @@
                     </use>
                 </svg>
             </a>
-            <article>
+            <article class="description-article">
                 <h3 class="description-title">Оксана Великая</h3>
                 <p class="description-info">
                     Институт Военно-Морских Сил Национального университета «Одесская Морская Академия»
@@ -116,7 +116,7 @@
                     </use>
                 </svg>
             </a>
-            <article>
+            <article class="description-article">
                 <h3 class="description-title">Валерия Коновалова</h3>
                 <p class="description-info">
                     Луцкий национальный технический университет (Луцкий НТУ)
@@ -144,7 +144,7 @@
                     </use>
                 </svg>
             </a>
-            <article>
+            <article class="description-article">
                 <h3 class="description-title">Тоня Кучеровская</h3>
                 <p class="description-info">
                     Выпуск 2015-го года,<br> Національний університет<br> біоресурсів
@@ -175,7 +175,7 @@
                     </use>
                 </svg>
             </a>
-            <article>
+            <article class="description-article">
                 <h3 class="description-title">Валентина Косько</h3>
                 <p class="description-info">
                     Национальный лесотехнический университет Украины (НЛТУ)
@@ -193,14 +193,7 @@
             </article>
         </div>
 
-        <div class="controls-container">
-            <a class="prev controls-container__control" onclick="plusSlides(-1)">
-                <svg class="controls-container__icon" width="25" height="25">
-                    <use href="../src/images/symbol-defs.svg#icon-arrow-1">
-                    </use>
-                </svg>
-            </a>
-
+        <div class="controls-dots">
             <span class="dot" onclick="currentSlide(1)"><img
                     srcset="../src/images/reviews/img1x1.png 1x, ../src/images/reviews/img1x2.png 2x"
                     src="../src/images/reviews/img1x2.png" class="controls-container__image" alt="" width="54"
@@ -230,15 +223,20 @@
                     src="../src/images/reviews/img7x2.png" class="controls-container__image" alt="" width="54"
                     height="54"></span>
 
-            <a class="next controls-container__control" onclick="plusSlides(1)">
-                <svg class="controls-container__icon" width="25" height="25">
-                    <use href="../src/images/symbol-defs.svg#icon-arrow-2">
-                    </use>
-                </svg>
-            </a>
+            <div class="controls-container">
+                <a class="prev controls-container__control" onclick="plusSlides(-1)">
+                    <svg class="controls-container__icon" width="25" height="25">
+                        <use href="../src/images/symbol-defs.svg#icon-arrow-1">
+                        </use>
+                    </svg>
+                </a>
+                <a class="next controls-container__control" onclick="plusSlides(1)">
+                    <svg class="controls-container__icon" width="25" height="25">
+                        <use href="../src/images/symbol-defs.svg#icon-arrow-2">
+                        </use>
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
 </section>
-
-<script src="../src/slide.js">
-</script>
