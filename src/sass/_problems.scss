@@ -13,27 +13,15 @@ font-size: 20px;
 line-height: 1.35;
 letter-spacing: 0.03em;
 
-background-color: rgba(17, 21, 24, 1);
+background-color: $black;
 background-size: contain;
-color: #fff;
+color: $white;
 
 &--color {
-  color: rgba(255, 107, 9, 1);
+  color: $accent;
 }
   @media (min-width: 1280px) {
       
-    &::before {
-      content: " ";
-      position: absolute;
-      width: 455px;
-      height: 472px;
-      bottom: 30%;
-      right: -50px;
-      background-image: url(../images/svg/problems.svg);
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
 }
 }
 
@@ -63,6 +51,11 @@ color: #fff;
   line-height: 1.3;
   height: 560px;
   // padding: 100px  280px 183px;
+
+  background-image: url(../images/svg/problems.svg);
+background-position: right bottom;
+background-repeat: no-repeat;
+background-size: contain;
   }
 }
 
@@ -74,7 +67,7 @@ color: #fff;
   counter-reset: section; 
   list-style-type: none;
   
-  background-color: #FFFFFF;
+  background-color: $white;
   
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   @media (max-width: 767px) {
@@ -86,11 +79,12 @@ color: #fff;
       padding: 30px 20px;
   }
   @media (min-width: 768px) {
-      top: 250px;
+      top: 230px;
       right: 44px;
       left: 44px;
       height: 310px;
-     padding: 0 96px;
+      margin: 0;
+     padding: 0 96px 30px 96px;
       display: flex;
       flex-wrap: wrap;
          margin-top: calc(-1 * 22px);
@@ -104,6 +98,11 @@ color: #fff;
  padding: 70px 110px;
 }
 }
+@media (max-width: 767px) {
+  .problems__text:not(:last-child) {
+    margin-bottom: 10px;
+}
+}
 .problems__text {
   
   font-weight: bold;
@@ -115,9 +114,6 @@ color: #fff;
   letter-spacing: 0.08em;
   color: black;
 
-  &:not(:last-child) {
-      margin-bottom: 10px;
-  }
   &::before {
       font-weight: bold;
       font-size: 14px;
@@ -128,7 +124,7 @@ color: #fff;
        content: '— ' counter(section, decimal-leading-zero) ' ';
    
        display: flex;
-       color: rgba(255, 107, 9, 1);
+       color: $accent;
   }
 }
 @media screen and (max-width: 767px) {
