@@ -42,7 +42,6 @@
 .about__image {
   display: flex;
   flex-wrap: wrap;
-  // width: 243px;
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -119,31 +118,47 @@
   }
 }
 
+.about__list-item {
+  display: flex;
+  align-items: flex-start;
+}
+
 .about__list-item + .about__list-item {
   margin-top: 35px;
 }
 
-.about__list-item::before {
-  content: '';
-  display: inline-block;
+.about__icon--wrap {
+  display: inline;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__icon {
+  justify-content: center;
+  align-items: center;
   width: 17px;
   height: 14px;
   margin-right: 9px;
-  background-image: url(../images/svg/tick.svg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+
+  @media screen and (min-width: 768px) {
+    
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 35px;
+    width: 25px;
+    height: 20px;
+  }
 }
 
 .about__progress {
-  display: block;
-  display: flex;
-  flex-wrap: wrap;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.666;
   margin-top: 14px;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   color: $light-grey;
 
   @media screen and (min-width: 768px) {
@@ -154,8 +169,6 @@
   }
 
   @media screen and (min-width: 1280px) {
-    display: block;
-    justify-content: space-between;
     width: 641px;
     height: 310px;
     font-size: 18px;
