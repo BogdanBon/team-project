@@ -145,26 +145,25 @@
 }
 
 .copyright__text {
-  margin-right: auto;
-
+  display: block;
   font-size: 14px;
-
   font-weight: 500;
   line-height: 2;
   letter-spacing: 0em;
   color: $light-grey;
-
-  @media screen and (max-width: 767px) {
-    margin-left: auto;
-  }
 }
 
 .copyright__container {
   margin-left: auto;
   margin-right: auto;
+
   padding: 21px 0 21px 0;
-  background-color: $black;
   justify-content: center;
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 21px 20px 21px 20;
+  }
   @media screen and (min-width: 768px) {
     max-width: 688px;
   }
