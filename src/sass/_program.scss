@@ -9,8 +9,8 @@
   position: relative;
   justify-content: center;
   display: flex;
+  text-align: center;
   align-items: center;
-
   background-color: $black;
   color: $white;
   background-image: url(../images/program.img/program.m1.png);
@@ -23,9 +23,9 @@
 
   @media screen and (min-width: 768px) {
     padding: 60px 0px 253px 0px;
-    background-image: url(../images/program.img/program.t2.png);
+    background-image: url(../images/program.img/program.t1.png);
     background-repeat: no-repeat;
-    background-position: right 822px;
+    background-position: right 803px;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/program.img/program.t2.png);
@@ -45,20 +45,19 @@
   }
 
   &__title {
-    margin: 0px 0px 43px;
-
+    margin: 0 0 43px;
     font-weight: 800;
     font-size: 20px;
     line-height: 1.3;
     letter-spacing: 0.03em;
 
     @media screen and (min-width: 768px) {
-      margin: 0px auto 52px 40px;
+      margin: 0px auto 52px 0px;
       text-align: left;
     }
 
     @media screen and (min-width: 1280px) {
-      margin: 0px auto 100px 184px;
+      margin: 0px auto 100px 0px;
       text-align: left;
       display: flex;
       font-size: 46px;
@@ -72,11 +71,12 @@
   justify-content: center;
 
   @media screen and (min-width: 1280px) {
-    margin: 0px auto 0px;
   }
 
   @media screen and (max-width: 1279px) {
     position: relative;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 .hr {
@@ -90,8 +90,23 @@
   }
 }
 
+.decktop-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 1344px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 .program-border {
-  @media screen and (min-width: 300px) {
+  @media screen and (min-width: 320px) {
     border-left: 1px solid $white;
     height: 1146px;
     position: absolute;
@@ -105,7 +120,7 @@
     height: 702px;
     position: absolute;
     top: 14px;
-    left: 1px;
+    left: 0px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -128,7 +143,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 1199px;
+    max-width: 1279px;
     margin: 0px 0px 0px 50px;
   }
 
