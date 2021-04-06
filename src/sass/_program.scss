@@ -33,6 +33,19 @@
     }
   }
 
+  @media screen and (min-width: 1200px) {
+    margin: 0px auto 0px;
+    padding: 120px 15px 363px;
+    background-image: url(../images/program.img/program.d1.png);
+    background-repeat: no-repeat;
+    background-position: left 629px;
+    background-size: 495px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/program.img/program.d2.png);
+    }
+  }
+
   &__title {
     margin: 0px 0px 43px;
 
@@ -44,12 +57,33 @@
     @media screen and (min-width: 768px) {
       margin: 0px auto 40px 52px;
     }
+
+    @media screen and (min-width: 1200px) {
+      margin: 0px auto 100px 169px;
+
+      font-size: 46px;
+      line-height: 1.3;
+    }
   }
 }
 
 .program-container {
   display: flex;
-  position: relative;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 0px auto 0px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    position: relative;
+  }
+}
+.hr {
+  @media screen and (min-width: 1200px) {
+    color: $white;
+    width: 100vw;
+    margin: 0px 0px 60px;
+  }
 }
 
 .program-border {
@@ -62,13 +96,16 @@
     left: -1px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     border-left: 1px solid $white;
-    height: 681px;
+    height: 712px;
     position: absolute;
     top: 14px;
     max-width: 1199px;
     left: 1px;
+  }
+
+  @media screen and (min-width: 1200px) {
   }
 }
 
@@ -85,6 +122,17 @@
   @media screen and (min-width: 768px) {
     max-width: 1199px;
     margin: 0px 0px 0px 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    display: flex;
+  }
+
+  &__item:not(:first-child) {
+    @media screen and (min-width: 1200px) {
+      margin-left: 50px;
+    }
   }
 }
 
@@ -110,6 +158,11 @@
       bottom: 8px;
       left: -55px;
     }
+
+    @media screen and (min-width: 1200px) {
+      bottom: 82px;
+      left: -3px;
+    }
   }
 
   @media screen and (min-width: 300px) {
@@ -120,9 +173,9 @@
     line-height: 2;
   }
 
-  &__item {
-    justify-content: center;
-    display: flex;
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.4;
   }
 }
 
@@ -135,8 +188,7 @@
     margin-bottom: 40px;
   }
 
-  @media screen and (min-width: 768px) {
-    max-width: 1199px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     margin-bottom: 30px;
   }
@@ -153,9 +205,17 @@
     &::before {
       content: '—';
       display: inline-block;
-      width: 20px;
-      height: 2px;
       color: currentColor;
+
+      @media screen and (min-width: 1200px) {
+        margin-right: 5px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 20px;
+      line-height: 1.64;
+      margin: 25px 0px 10px;
     }
   }
 
@@ -175,6 +235,12 @@
       height: 2px;
       color: currentColor;
     }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 20px;
+      line-height: 1.64;
+      margin: 25px 0px 10px;
+    }
   }
 }
 
@@ -192,42 +258,42 @@
 }
 
 .semester-list__one:not(:last-child) {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 84px;
     max-width: 1199px;
   }
 }
 
 .semester-list__two:not(:last-child) {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 119px;
     max-width: 1199px;
   }
 }
 
 .semester-list__three:first-child {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 119px;
     max-width: 1199px;
   }
 }
 
 .semester-list__three:last-child {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 64px;
     max-width: 1199px;
   }
 }
 
 .semester-list__four:first-child {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 50px;
     max-width: 1199px;
   }
 }
 
 .semester-list__four:last-child {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 50px;
     max-width: 1199px;
   }
