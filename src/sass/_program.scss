@@ -23,7 +23,7 @@
 
   @media screen and (min-width: 768px) {
     padding: 60px 0px 253px 0px;
-    background-image: url(../images/program.img/program.t1.png);
+    background-image: url(../images/program.img/program.t2.png);
     background-repeat: no-repeat;
     background-position: right 822px;
 
@@ -54,11 +54,13 @@
 
     @media screen and (min-width: 768px) {
       margin: 0px auto 52px 40px;
+      text-align: left;
     }
 
     @media screen and (min-width: 1280px) {
-      margin: 0px auto 100px 169px;
-
+      margin: 0px auto 100px 184px;
+      text-align: left;
+      display: flex;
       font-size: 46px;
       line-height: 1.3;
     }
