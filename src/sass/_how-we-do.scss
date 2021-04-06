@@ -1,4 +1,4 @@
-.container-how-we-do {
+.container-we-do {
   max-width: 320px;
   padding: 0 20px 0 20px;
   margin-left: auto;
@@ -7,10 +7,17 @@
   @media screen and (min-width: 768px) {
     max-width: 680px;
   }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1314px;
+  }
 }
 
 .we-do-section {
   padding: 50px 0 50px 0;
+  @media screen and (min-width: 1280px) {
+    padding: 130px 0 130px 0;
+  }
 }
 .we-do-section__title {
   margin-bottom: 30px;
@@ -20,6 +27,12 @@
   letter-spacing: 0.03em;
   text-align: center;
   color: rgb(17, 21, 24);
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 50px;
+    font-size: 46px;
+    text-align: left;
+  }
 }
 
 .we-do-list {
@@ -29,6 +42,9 @@
     flex-wrap: wrap;
     margin-top: -27px;
     margin-left: -20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: -20px;
   }
 }
 
@@ -61,6 +77,13 @@
     margin-left: 20px;
     flex-basis: calc(100% / 2 - 20px);
   }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+    padding: 40px 30px 55px 30px;
+    min-height: 396px;
+    flex-basis: calc(100% / 3 - 20px);
+  }
 }
 
 .we-do-list__item:focus,
@@ -83,6 +106,11 @@
   line-height: 1.43;
   letter-spacing: 0.08em;
   color: rgb(17, 21, 24);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
 
 .we-do-list__title::after {
@@ -101,6 +129,11 @@
   line-height: 1.67;
   letter-spacing: 0.08em;
   color: rgb(185, 185, 185);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.6;
+  }
 }
 
 .we-do-list__icon {
