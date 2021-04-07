@@ -1,6 +1,18 @@
 .problems {
   position: relative;
-  height: 100%;
+  height: 693px;
+}
+
+@media (min-width: 768px) {
+  .problems {
+    height: 492px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .problems {
+    height: 710px;
+  }
 }
 
 .problems__container {
@@ -16,142 +28,136 @@
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
-  
   }
 }
 .problems__title {
   display: inline-block;
   width: 100%;
-font-weight: 800;
-font-size: 20px;
-line-height: 1.35;
-letter-spacing: 0.03em;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.03em;
 
-background-color: $black;
-background-size: contain;
-color: $white;
+  background-color: $black;
+  background-size: contain;
+  color: $white;
 
-&--color {
-  color: $accent;
-}
-
+  &--color {
+    color: $accent;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .problems__title {
-  height: 545px;
-  padding: 50px 20px 367px 20px;
-  margin-bottom: 150px;
-}
+    height: 545px;
+    padding: 50px 20px 367px 20px;
+    margin-bottom: 150px;
+  }
 }
 @media (min-width: 768px) {
   .problems__title {
-  font-weight: 800;
-  font-size: 26px;
-  line-height: 1.3;
-  
-  letter-spacing: 0.03em;
-  height: 340px;
-  padding: 60px 160px 170px 40px;
-      padding-bottom: 177px;
-      margin-bottom: 250px;
-}
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.3;
+
+    letter-spacing: 0.03em;
+    height: 340px;
+    padding: 60px 160px 170px 40px;
+    padding-bottom: 177px;
+    margin-bottom: 250px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .problems__title {
-  font-size: 46px;
-  line-height: 1.3;
-  padding: 0 0 0 183px;
+    font-size: 46px;
+    line-height: 1.3;
+    padding: 0 0 0 183px;
 
-background-color: transparent;
+    background-color: transparent;
   }
 }
-
-
 
 .problems__list {
   position: absolute;
   margin-bottom: 0;
-  counter-reset: section; 
+  counter-reset: section;
   list-style-type: none;
   margin-right: auto;
   margin-left: auto;
-  
+
   background-color: $white;
-  
+
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   @media (max-width: 767px) {
-      top: 170px;
-      right: 20px;
-      left: 20px;
-      margin-top: 27px;
-      height: 490px;
-      padding: 30px 20px;
+    top: 170px;
+    right: 20px;
+    left: 20px;
+    margin-top: 27px;
+    height: 490px;
+    padding: 30px 20px;
   }
   @media (min-width: 768px) {
-      top: 230px;
-      right: 44px;
-      left: 44px;
-      height: 310px;
-      margin: 0;
-     padding: 0 96px 30px 96px;
-      display: flex;
-      flex-wrap: wrap;
-         margin-top: calc(-1 * 22px);
-   
-}
-@media screen and (min-width: 1280px) {
-  top: 380px;
-  right: 183px;
-  left: 183px;
-  height: 362px;
- padding: 70px 110px;
-}
+    top: 230px;
+    right: 44px;
+    left: 44px;
+    height: 310px;
+    margin: 0;
+    padding: 0 96px 30px 96px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * 22px);
+  }
+  @media screen and (min-width: 1280px) {
+    top: 380px;
+    right: 183px;
+    left: 183px;
+    height: 362px;
+    padding: 70px 110px;
+  }
 }
 @media (max-width: 767px) {
   .problems__text:not(:last-child) {
     margin-bottom: 10px;
-}
+  }
 }
 .problems__text {
-  
   font-weight: bold;
   font-size: 14px;
   line-height: 1.42;
-  
+
   text-align: left;
   align-items: center;
   letter-spacing: 0.08em;
   color: black;
 
   &::before {
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 1.21;
-      letter-spacing: 0.08em;
-   
-       counter-increment: section;
-       content: '— ' counter(section, decimal-leading-zero) ' ';
-   
-       display: flex;
-       color: $accent;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.08em;
+
+    counter-increment: section;
+    content: '— ' counter(section, decimal-leading-zero) ' ';
+
+    display: flex;
+    color: $accent;
   }
 }
 @media screen and (max-width: 767px) {
   .problems__text:nth-last-child(-n + 5) {
-  height: 69px;
+    height: 69px;
   }
 }
-  @media screen and (min-width: 768px) {
-    .problems__text {
-          flex-basis: calc((100% - 44px) / 2 );
-          margin-top: 22px;
-          margin-left: 22px;
-          margin-bottom: 0;
-      } 
-    }
-      @media screen and (min-width: 1280px) {
-        .problems__text {
-      flex-basis: calc((100% - 66px) / 3 );
-        }
+@media screen and (min-width: 768px) {
+  .problems__text {
+    flex-basis: calc((100% - 44px) / 2);
+    margin-top: 22px;
+    margin-left: 22px;
+    margin-bottom: 0;
   }
+}
+@media screen and (min-width: 1280px) {
+  .problems__text {
+    flex-basis: calc((100% - 66px) / 3);
+  }
+}
