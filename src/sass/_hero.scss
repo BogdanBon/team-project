@@ -37,16 +37,6 @@
 .hero__container {
   padding-right: 20px;
   padding-left: 20px;
-
-  @media (max-width: 767px) {
-    padding-right: 18px;
-    padding-left: 42px;
-  }
-
-  @media (min-width: 1280px) {
-    // padding-right: 0px;
-    // padding-left: 0px;
-  }
 }
 
 .hero__flex-box {
@@ -126,11 +116,6 @@
     width: 354px;
     height: 70px;
   }
-
-  &:hover,
-  &:focus {
-    background: $light-grey;
-  }
 }
 
 .hero__button-text {
@@ -153,11 +138,6 @@
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.14em;
-  }
-
-  &:hover,
-  &:focus {
-    color: $accent;
   }
 }
 
