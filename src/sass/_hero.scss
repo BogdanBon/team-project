@@ -1,12 +1,12 @@
 .hero {
   margin: 0 auto;
-  // max-width: 768px;
   max-width: 768px;
-  height: 618px;
+  // height: 618px;
+  height: 565px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+  background-color: $white;
+  // box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
 
   background-image: url('../images/hero/hero-des/Vector-des.png');
 
@@ -17,17 +17,20 @@
     background-image: url('../images/hero/hero-des/Vector-des@2x.png');
   }
 
+  @media (min-width: 394px) {
+    height: 510px;
+  }
+
   @media (min-width: 768px) {
     background-size: contain;
     min-width: 768px;
-    height: 556px;
+    height: 405px;
   }
 
   @media (min-width: 1280px) {
     max-width: 1688px;
-    height: 878px;
-    // height: 782px;
-    // background-image: url('../images/hero/hero-des/Vector-des.png');
+    // height: 878px;
+    height: 782px;
   }
 }
 
@@ -41,27 +44,16 @@
   }
 
   @media (min-width: 1280px) {
-    padding-right: 0px;
-    padding-left: 0px;
+    // padding-right: 0px;
+    // padding-left: 0px;
   }
 }
 
 .hero__flex-box {
-  // margin-bottom: 30px;
-  // padding-bottom: 17px;
-
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
-    // justify-content: space-between;
-    // margin-top: 70px;
-    // padding-top: 70px;
-    // margin-bottom: 114px;
-    // padding-bottom: 72px;
-  }
-  @media (min-width: 1280px) {
-    // padding-bottom: 10px;
-    // margin-top: 45px;
+    margin-top: 10px;
   }
 }
 
@@ -71,9 +63,8 @@
   line-height: 1.35;
   letter-spacing: 0.03em;
 
-  color: #111518;
+  color: $black;
 
-  // padding-top: 50px;
   margin-bottom: 30px;
 
   @media (min-width: 768px) {
@@ -90,6 +81,11 @@
 }
 
 .hero__text {
+  @media (max-width: 1279px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   font-size: 14px;
   line-height: 1.6;
   letter-spacing: 0.08em;
@@ -101,20 +97,20 @@
   }
 }
 .hero__text-rgey {
-  color: #b9b9b9;
+  color: $light-grey;
   font-weight: 500;
 }
 .hero__text-dark {
   font-weight: 700;
-  color: #111518;
+  color: $black;
 }
 .hero__text-accent {
   font-weight: 700;
-  color: #ff6b09;
+  color: $accent;
 }
 
 .hero__button {
-  background: #ff6b09;
+  background: $accent;
   border: none;
   display: block;
   margin: 0 auto;
@@ -130,6 +126,11 @@
     width: 354px;
     height: 70px;
   }
+
+  &:hover,
+  &:focus {
+    background: $light-grey;
+  }
 }
 
 .hero__button-text {
@@ -143,7 +144,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: $white;
 
   @media (min-width: 768px) {
     font-size: 12px;
@@ -152,6 +153,11 @@
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.14em;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent;
   }
 }
 
