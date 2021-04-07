@@ -1,59 +1,56 @@
 .benefits {
   position: relative;
-top: -407px;
-// padding-bottom: 39px;
-background: transparent;
+  top: -407px;
+  // padding-bottom: 39px;
+  background: transparent;
 
-@media (min-width: 768px) {
-  top: -203px;
-}
-@media screen and (min-width: 1280px) {
-  top: -199px;
-}
+  @media (min-width: 768px) {
+    top: -203px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: -199px;
+  }
 }
 .benefits__container {
-    padding-right: 20px;
-    padding-left: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 
   @media screen and (min-width: 768px) {
     padding-right: 40px;
     padding-left: 40px;
-}
+  }
 }
 .benefits__title {
   width: 55%;
   margin-bottom: 30px;
-font-weight: 800;
-font-size: 20px;
-line-height: 1.36;
-letter-spacing: 0.03em;
-background-color: $black;
-color: $white;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  // background-color: $black;
+  color: $white;
 
-@media screen and (min-width: 768px) {
-  width: 100%;
-  font-size: 26px;
-  text-align: center;
- 
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 }
 
-@media screen and (min-width: 1280px) {
-  position: absolute;
-  width: 1px; 
-  height: 1px; 
-  margin: -1px; 
-  border: 0; 
-  padding: 0; 
-  white-space: nowrap; 
-  clip-path: inset(100%); 
-  clip: rect(0 0 0 0); 
-  overflow: hidden;
-
-}
-
-}
-
-.benefits-list__container{
+.benefits-list__container {
   // height: 640px;
   margin-left: auto;
   margin-right: auto;
@@ -73,47 +70,46 @@ color: $white;
 }
 .benefits__list {
   list-style-type: none;
-  counter-reset: section; 
+  counter-reset: section;
   margin: 0;
 
-@media (min-width: 768px) {
-  display: flex;
-          flex-wrap: wrap;
-          margin-top: -30px;
-          margin-left: -30px;
-}
-@media screen and (min-width: 1280px) {
-  margin-top: -32px;
-  margin-left: -40px;
-}
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: -32px;
+    margin-left: -40px;
+  }
 }
 .benefits__text {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.42;
-letter-spacing: 0.08em;
-
-color: $black;
-
-
-&::before {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 1.64;
+  line-height: 1.42;
+  letter-spacing: 0.08em;
 
-  counter-increment: section;
-  content: "— " counter(section, decimal-leading-zero) " ";
-  
-  color: $accent;
-}
+  color: $black;
+
+  &::before {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.64;
+
+    counter-increment: section;
+    content: '— ' counter(section, decimal-leading-zero) ' ';
+
+    color: $accent;
+  }
 }
 
 @media screen and (max-width: 767px) {
-.benefits__text:not(:last-child) {
-  margin-bottom: 20px;
-}
+  .benefits__text:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (min-width: 768px) {
   .benefits__text:not(:last-child) {
@@ -122,19 +118,18 @@ color: $black;
 }
 @media screen and (min-width: 768px) {
   .benefits__text {
-    flex-basis: calc((100% - 60px) / 2 );
+    flex-basis: calc((100% - 60px) / 2);
     margin-top: 30px;
     margin-left: 30px;
-  } 
+  }
 }
 
-  @media screen and (min-width: 1280px) {
-    .benefits__text {
-      font-size: 20px;
-  flex-basis: calc((100% - 90px) / 3 );
-    }
+@media screen and (min-width: 1280px) {
+  .benefits__text {
+    font-size: 20px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
-
 
 // @media screen and (max-width: 1279px) {
 //   .benefits__text:nth-last-child(-n + 5) {
@@ -147,4 +142,3 @@ color: $black;
     margin-bottom: 10px;
   }
 }
-
