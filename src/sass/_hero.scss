@@ -35,8 +35,14 @@
 }
 
 .hero__container {
-  padding-right: 20px;
-  padding-left: 20px;
+  @media (max-width: 1279px) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  @media (min-width: 1280px) {
+    // padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 .hero__flex-box {
@@ -177,7 +183,9 @@
   @media (min-width: 1280px) {
     background-image: url('../images/hero/hero-des/hero-des-Ellipse2.png'),
       url('../images/hero/hero-des/hero-des-Ellipse1.png');
-    min-width: 841px;
+    min-width: 810px;
+    max-width: 841px;
+    // min-width: 600px;
     // width: 841px;
     // min-height: 718px;
     height: 718px;
