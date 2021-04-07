@@ -1,3 +1,10 @@
+.guarantee__container {
+  @media (min-width: 768px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 .guarantee__box {
   background: $off-white;
   padding-top: 30px;
