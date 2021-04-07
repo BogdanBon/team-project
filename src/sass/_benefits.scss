@@ -1,11 +1,14 @@
 .benefits {
   position: relative;
   top: -407px;
+  // left: 20px;
+  // right: 20px;
   // padding-bottom: 39px;
   background: transparent;
 
   @media (min-width: 768px) {
     top: -203px;
+    
   }
   @media screen and (min-width: 1280px) {
     top: -199px;
@@ -60,7 +63,7 @@
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
   @media (min-width: 768px) {
-    min-width: 688px;
+    // min-width: 688px;
     height: 395px;
     padding: 30px 96px;
   }
