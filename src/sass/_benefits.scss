@@ -52,6 +52,7 @@
 
 .benefits-list__container {
   // height: 640px;
+  width: 220px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px 30px;
@@ -69,6 +70,7 @@
   }
 }
 .benefits__list {
+  width: 220px;
   list-style-type: none;
   counter-reset: section;
   margin: 0;
