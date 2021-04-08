@@ -24,7 +24,7 @@ https://github.com/miktiang - our SCRUM master - section About
 https://github.com/BogdanBon - section Header + Advantages
 
 Also all of us really appreciate to our Senior / Master / Yoda of our HTML+CSS course ->
-https://github.com/luxplanjay Our start in developing with GoIT School and Aleksanrd Repeta is on of
+https://github.com/luxplanjay Our start in developing with GoIT School and Aleksandr Repeta is on of
 the best opportunity and chanse for the hard work but really happy future!
 
 Please find out our final project upper in link and be careful - it is really hot)
