@@ -1,49 +1,32 @@
-# parcel-project-template
+Welcome to our common repository
 
-## Зависимости
+Here you can see our first team project with using HTML+CSS technologies (and some JS too).
 
-На компьютере должена быть установлена LTS-версия [Node.js](https://nodejs.org/en/).
+-----> https://bogdanbon.github.io/team-project/ <-----
 
-## Перед началом работы
+Our team consist of seven fantastic developers and everybody of them are just on the first phase of
+theirs devepolment life.
 
-Один раз на проект установить все зависимости.
+Many thanks to:
 
-```shell
-npm ci
-```
+https://github.com/halyna-ala - sections Problems + Benefits
 
-### Разработка
+https://github.com/Tetiana4 - section Program
 
-Запустить режим разработки.
+https://github.com/Mirana-19 - sections How we do + Contacts + Footer
 
-```shell
-npm run dev
-```
+https://github.com/MishanyaZh - sections Hero and Guarantee
 
-Во вкладке браузера перейти по адресу [http://localhost:1234](http://localhost:1234).
+https://github.com/varynskyi - section Reviews
 
-### Деплой
+https://github.com/miktiang - our SCRUM master - section About
 
-Сборка будет автоматически собирать и деплоить продакшен версию проекта на GitHub Pages, в ветку
-`gh-pages`, каждый раз когда обновляется ветка `main`. Например, после прямого пуша или принятого
-пул-реквеста. Для этого необходимо в файле `package.json` отредактировать поле `homepage` и скрипт
-`build`, заменив `имя_пользователя` и `имя_репозитория` на свои.
+https://github.com/BogdanBon - section Header + Advantages
 
-```json
-"homepage": "https://имя_пользователя.github.io/имя_репозитория",
-"scripts": {
-  "build": "parcel build src/*.html --public-url /имя_репозитория/"
-},
-```
+Also all of us really appreciate to our Senior / Master / Yoda of our HTML+CSS course ->
+https://github.com/luxplanjay Our start in developing with GoIT School and Aleksanrd Repeta is on of
+the best opportunity and chanse for the hard work but really happy future!
 
-Через какое-то время живую страницу можно будет посмотреть по адресу указанному в отредактированном
-свойстве `homepage`, например
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
+Please find out our final project upper in link and be careful - it is really hot)
 
-## Файлы и папки
-
-- Все паршалы файлов стилей должны лежать в папке `src/sass` и импортироваться в
-  `src/sass/main.scss`
-- Изображения добавляйте в папку `src/images`, заранее оптимизировав их. Сборщик просто копирует
-  используемые изображения чтобы не нагружать систему оптимизацией картинок, так как на слабых
-  компьютерах это может занять прилично времени.
+See you
